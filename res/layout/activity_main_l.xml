@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityHost" >
+
+    <RelativeLayout
+        android:id="@+id/panelControls"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp" >
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/exit" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btnPortrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnLandscape"
+            android:contentDescription="@string/portrait" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btnLandscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnAbout"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/landscape" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/about" />
+    </RelativeLayout>
+
+    <br.com.bandtec.nxtcontrol.ui.BgDirControl
+        android:id="@+id/dirControl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:layout_toLeftOf="@+id/panelMsg"
+        android:layout_toRightOf="@+id/panelControls" />
+
+    <br.com.bandtec.nxtcontrol.ui.BgTextView
+        android:id="@+id/txtError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@+id/panelControls"
+        android:gravity="center"
+        android:textAppearance="@style/LargeText"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/panelMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/panelMsg2"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:weightSum="4" >
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="4" >
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

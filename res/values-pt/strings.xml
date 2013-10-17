@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bt_error_dialog_message">Oh, não! Parece que seu robô NXT não está ligado. Por favor, certifique-se de que seu robô esteja ligado e de que seu Bluetooth esteja habilitado, para então tentar conectar-se novamente.</string>
+    <string name="pairing_message">Por favor, tente conectar-se de novo depois de parear o dispositivo.</string>
+    <string name="bt_needs_to_be_enabled">Você precisa habilitar o Bluetooth para poder prosseguir!"</string>
+    <string name="bt_initialization_failure">Bluetooth não suportado!</string>
+    <string name="no_paired_nxt">Nenhum robô NXT encontrado!</string>
+    <string name="problem_at_connecting">Problem ao criar a conexão!</string>
+    <string name="problem_at_closing">Problema ao terminar a conexão!</string>
+    <string name="problem_at_sending">Problema ao enviar uma mensagem!</string>
+    <string name="problem_at_receiving">Problema ao receber uma mensagem!</string>
+    <string name="devices">Robôs NXT</string>
+    <string name="connecting_please_wait">Conectando-se ao seu robô NXT. Por favor, aguarde&#8230;</string>
+    <string name="scanning">Procurando robôs NXT ao redor&#8230;</string>
+    <string name="none_paired">Nenhum robô NXT pareado!</string>
+    <string name="none_found">Nenhum robô NXT encontrado!</string>
+    <string name="app_description">Controle remoto para o LEGO Mindstorms NXT 2.0</string>
+    <string name="app_more_info">Procurando por mais informações?\nTalvez o código fonte?\nTem um pedido?\nEncontrou um bug?!?\nSó quer entrar em contato? :)\n\nMande-me um e-mail:\ncarlos.rafael@bandtec.com.br\nou visite o site do projeto do aplicativo no GitHub:\nhttps://github.com/BandTec/NXTControl\n\nEste projeto é baseado nos seguintes projetos de código aberto:\n\nLEGO-MINDSTORMS-MINDdroid\nhttps://github.com/NXT/LEGO-MINDSTORMS-MINDdroid\n\nFPlayAndroid\nhttps://github.com/carlosrafaelgn/FPlayAndroid\n\nA fonte utilizada para desenhar os ícones escaláveis, icons.ttf, foi criada utilizando o IcoMoon App, por Keyamoon, disponível em:\nhttp://icomoon.io/app\n\nAlguns dos ícones escaláveis foram criados por mim e alguns vieram do conjunto IcoMoon Free, por Keyamoon, licenciado sob Creative Commons License 3.0.\n\nNXT Control é licenciado sob os termos da licença GPLv3. Veja http://gplv3.fsf.org para mais detalhes.</string>
+    <string name="got_it">Entendi!</string>
+    <string name="connected">Conectado!</string>
+    <string name="go_back">Voltar</string>
+    <string name="error">Erro:</string>
+    <string name="oops">Oops&#8230;</string>
+    <string name="null_device_name">[Robô NXT]</string>
+    <string name="refresh_list">Atualizar lista</string>
+    <string name="empty_list">[Vazio]</string>
+    <string name="portrait">Retrato</string>
+    <string name="landscape">Paisagem</string>
+    <string name="about">Sobre</string>
+    <string name="exit">Sair</string>
+
+</resources>

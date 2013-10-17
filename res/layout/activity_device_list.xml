@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".ActivityHost" >
+
+    <RelativeLayout
+        android:id="@+id/panelControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+
+        <br.com.bandtec.nxtcontrol.ui.BgTextView
+            android:id="@+id/txtDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/devices"
+            android:textAppearance="@style/LargeText" />
+
+        <br.com.bandtec.nxtcontrol.ui.BgButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/refresh_list"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <br.com.bandtec.nxtcontrol.ui.BgListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <requestFocus />
+    </br.com.bandtec.nxtcontrol.ui.BgListView>
+
+    <LinearLayout
+        android:id="@+id/panelScanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/scanning"
+            android:textAppearance="@style/MediumText" />
+    </LinearLayout>
+
+</LinearLayout>
